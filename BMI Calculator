@@ -1,0 +1,11 @@
+weight_kg = float(input('how much kgs do you weigh ?'))
+height_m = float(input('how tall are you in meters ?'))
+bmi = weight_kg / (height_m ** 2)
+print ('bmi: ')
+print (bmi)
+if bmi > 25:
+    print ('you are overweight')
+elif bmi < 18.5:
+    print ('you are underweight')
+else:
+    print ('you are normal weight')
