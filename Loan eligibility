@@ -1,0 +1,22 @@
+has_high_income = True
+has_good_credit = True
+if has_high_income and has_good_credit:
+    print ('eligable for loan')
+else:
+    print ('not eligable for loan')
+
+has_high_income = False
+has_good_credit = True
+if has_high_income or has_good_credit:
+     print('eligable for loan')
+else:
+    print ('not eligable for loan')
+
+
+
+has_high_income = True
+criminal_record = False
+if has_high_income and not criminal_record:
+    print('eligable for loan')
+else:
+    print ('not eligable for loan')
