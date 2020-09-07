@@ -1,1 +1,16 @@
+import math
+n = 100
+def sieve_of_eratosthenes(n):
+    prime_numbers = []
+    numbers = list(range(2, n))
+    current = 2
+    while current < math.sqrt(n):
+        for i in range(current, n, current):
+            if i in numbers:
+                numbers.remove(i)
+        prime_numbers.append(current)
+        current = numbers[0]
+    return prime_numbers + numbers
+print (sieve_of_eratosthenes(n))
+
 
