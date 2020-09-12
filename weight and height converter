@@ -1,0 +1,33 @@
+#weight converter:
+
+weight = float(input('weight: '))
+unit = input('lbs or kgs ? ')
+if unit.upper() == 'KGS':
+    converted = weight * 2.205
+    print (f'you weigh {converted}  lbs')
+elif unit.upper() == 'LBS':
+    converted = weight / 2.205
+    print (f'you weigh {converted} kgs')
+else:
+    print ('I dont understand that')
+    
+    
+    
+#height converter:
+
+height = float(input('height: '))
+unit = input('feet or meters ? ')
+if unit.upper() == 'METERS':
+    converted = height * 3.281
+    print(f'you are {converted} feet tall')
+elif unit.upper() == 'FEET':
+    converted = height / 3.281
+    print(f'you are {converted} meters tall')
+else:
+    print('I dont understand that')
+
+
+
+
+
+
