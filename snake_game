@@ -78,10 +78,17 @@ def move():
 #keyboard bindings
 
 wn.listen()
-wn.onkeypress(go_up, 'w')
+wn.onkeypress(go_up, 'w' )
+wn.onkeypress(go_up, 'W' )
+
 wn.onkeypress(go_down, 's')
+wn.onkeypress(go_down, 'S' )
+
 wn.onkeypress(go_left, 'a')
-wn.onkeypress(go_right, 'd')
+wn.onkeypress(go_left, 'A' )
+
+wn.onkeypress(go_right, 'd',)
+wn.onkeypress(go_right, 'D' )
 
 while True:
     wn.update()
