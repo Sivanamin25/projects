@@ -1,0 +1,119 @@
+import turtle
+import random
+from turtle import Turtle
+
+wn = turtle.Screen()
+wn.title = 'turtle race'
+wn.setup(width=1500, height=700)
+wn.bgcolor('white')
+wn.tracer(1)
+
+pen = turtle.Turtle()
+pen.speed()
+pen.shape('square')
+pen.color('black')
+pen.penup()
+pen.hideturtle()
+pen.goto(0, 280)
+pen.write('-------------------------------------------------', align='center', font=('courier', 48, 'normal'))
+
+turtle = Turtle()
+turtle.speed(10000)
+turtle.left(90)
+turtle.turtlesize(2)
+turtle.penup()
+turtle.shape("turtle")
+turtle.color("red")
+turtle.goto(0, -280)
+turtle.direction = 'up'
+
+turtle2 = Turtle()
+turtle2.speed(10000)
+turtle2.left(90)
+turtle2.turtlesize(2)
+turtle2.penup()
+turtle2.shape("turtle")
+turtle2.color("blue")
+turtle2.goto(-300, -280)
+turtle2.direction = 'up'
+
+turtle3 = Turtle()
+turtle3.speed(10000)
+turtle3.left(90)
+turtle3.turtlesize(2)
+turtle3.penup()
+turtle3.shape("turtle")
+turtle3.color("green")
+turtle3.goto(300, -280)
+turtle3.direction = 'up'
+
+turtle4 = Turtle()
+turtle4.speed(10000)
+turtle4.left(90)
+turtle4.turtlesize(2)
+turtle4.penup()
+turtle4.shape("turtle")
+turtle4.color("orange")
+turtle4.goto(600, -280)
+turtle4.direction = 'up'
+
+turtle5 = Turtle()
+turtle5.speed(10000)
+turtle5.left(90)
+turtle5.turtlesize(2)
+turtle5.penup()
+turtle5.shape("turtle")
+turtle5.color("violet")
+turtle5.goto(-600, -280)
+turtle5.direction = 'up'
+
+turtle.pendown()
+
+turtle2.pendown()
+
+turtle3.pendown()
+
+turtle4.pendown()
+
+turtle5.pendown()
+
+turtle.speed(0)
+
+turtle2.speed(0)
+
+turtle3.speed(0)
+
+turtle4.speed(0)
+
+turtle5.speed(0)
+
+while True:
+    wn.update()
+
+    while turtle.ycor() < 280 or turtle2.ycor() < 280 or turtle3.ycor() < 280 or turtle4.ycor() < 280 or turtle5.ycor() < 280:
+        number = random.randint(1, 100)
+        number2 = random.randint(1, 100)
+        number3 = random.randint(1, 100)
+        number4 = random.randint(1, 100)
+        number5 = random.randint(1, 100)
+        if turtle.ycor() == 280 or turtle2.ycor() == 280 or turtle3.ycor() == 280 or turtle4.ycor() == 280 or turtle5.ycor() == 280:
+            break
+            
+        if number > 30:
+            turtle.fd(2)
+
+        if number2 > 50:
+            turtle2.fd(2)
+
+        if number3 > 50:
+            turtle3.fd(2)
+
+        if number4 > 50:
+            turtle4.fd(2)
+
+        if number5 > 50:
+            turtle5.fd(2)
+
+
+move()
+wn.mainloop()
