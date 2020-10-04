@@ -1,6 +1,7 @@
 import random
 
 guess = str(input('make your guess: '))
+guess = guess.lower()
 choices = ['rock','paper','scissors']
 c_guess = (random.choice(choices))
 print (f'you guessed {guess}')
