@@ -9,6 +9,7 @@ print (f'computer guessed {c_guess}')
 while guess == c_guess:
     print('its a tie')
     guess = str(input('make another guess: '))
+    guess = guess.lower()
     choices = ['rock', 'paper', 'scissors']
     c_guess = (random.choice(choices))
 
