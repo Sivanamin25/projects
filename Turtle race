@@ -102,16 +102,16 @@ while True:
         if number > 30:
             turtle.fd(2)
 
-        if number2 > 50:
+        if number2 > 30:
             turtle2.fd(2)
 
-        if number3 > 50:
+        if number3 > 30:
             turtle3.fd(2)
 
-        if number4 > 50:
+        if number4 > 30:
             turtle4.fd(2)
 
-        if number5 > 50:
+        if number5 > 30:
             turtle5.fd(2)
 
 
