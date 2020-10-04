@@ -1,0 +1,59 @@
+import random
+
+guess = str(input('make your guess: '))
+choices = ['rock','paper','scissors']
+c_guess = (random.choice(choices))
+print (f'you guessed {guess}')
+print (f'computer guessed {c_guess}')
+while guess == c_guess:
+    print('its a tie')
+    guess = str(input('make another guess: '))
+    choices = ['rock', 'paper', 'scissors']
+    c_guess = (random.choice(choices))
+
+    print(f'you guessed {guess}')
+    print(f'computer guessed {c_guess}')
+
+    if guess == 'paper':
+        if c_guess == 'rock':
+            print('') #printing nothing because the result is already being printed by the code below, else there would be 2
+        if c_guess == 'scissors':
+            print('')
+
+
+    elif guess == 'rock':
+        if c_guess == 'scissors':
+            print('')
+        if c_guess == 'paper':
+            print('')
+
+    elif guess == 'scissors':
+        if c_guess == 'paper':
+            print('')
+        if c_guess == 'rock':
+            print('')
+
+
+
+
+
+
+
+
+if guess == 'paper':
+    if c_guess == 'rock':
+        print('you won !')
+    if c_guess == 'scissors':
+        print('you lost')
+
+elif guess == 'rock':
+    if c_guess == 'scissors':
+        print('you won !')
+    if c_guess == 'paper':
+        print('you lost')
+
+elif guess == 'scissors':
+    if c_guess == 'paper':
+        print('you won !')
+    if c_guess == 'rock':
+        print('you lost')
