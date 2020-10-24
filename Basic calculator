@@ -1,12 +1,17 @@
+import math
+
 number1 = float(input('enter first number: '))
 operator = input('enter operator: ')
-number2 = float(input('enter second number: '))
+if operator.lower() == 'sqrt':
+    print(math.sqrt(number1))
+else:
+    number2 = float(input('enter second number: '))
 
 if operator == '+':
     print(number1 + number2)
 elif operator == '*':
     print(number1 * number2)
-elif operator == '-':
+elif operator== '-':
     print(number1 - number2)
 elif operator == '/':
     print(number1 / number2)
